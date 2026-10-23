@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <title>Janitra Hameed Al Khusen - Portofolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0" id="mainNav">
+        <a href="#beranda" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-white" style="font-weight: 800; letter-spacing: 1px;">HmD<span style="color: #0D6EFD;"></span></h2>
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" id="mobileMenuBtn">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Tombol X untuk tutup menu di Mobile -->
+            <div class="close-menu-btn" id="closeMenuBtn">
+                <i class="bi bi-x"></i>
+            </div>
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0 pe-lg-5">
+                <a href="#beranda" class="nav-item nav-link">Beranda</a>
+                <a href="#tentang" class="nav-item nav-link">Tentang</a>
+                <a href="#keahlian" class="nav-item nav-link">Keahlian</a>
+                <a href="#proyek" class="nav-item nav-link">Proyek</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div id="beranda" class="static-hero">
+        <img src="img/hero.png" alt="Hero" class="hero-bg">
+        <div class="hero-overlay">
+            <div class="container text-start text-lg-center px-4">
+                <div class="row justify-content-start justify-content-lg-center">
+                    <div class="col-12 col-lg-9">
+                        <h1 class="hero-title">Hai, saya Hameed</h1>
+                        <p class="hero-desc">Eksplorasi karya, proyek, dan perjalanan saya di sini.</p>
+                        
+                        <!-- Panah Bouncing dengan text-center agar selalu di tengah -->
+                        <div class="mt-5 text-center">
+                            <a href="#tentang" class="text-white"><i class="fa fa-chevron-down fa-2x bounce"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <div id="tentang" class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                
+                <!-- Bagian Pasfoto -->
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden shadow-lg border">
+                        <img src="img/pasfoto.png" alt="Pasfoto Janitra" class="img-fluid w-100" style="object-fit: cover; max-height: 500px;">
+                    </div>
+                </div>
+
+                <!-- Bagian Teks Tentang -->
+                <div class="col-lg-6">
+                    <h6 class="text-primary text-uppercase fw-bold" style="letter-spacing: 2px;">Tentang Saya</h6>
+                    <h1 class="mb-4">Janitra Hameed Al Khusen<span></span></h1>
+                    
+                    <p class="mb-4 text-muted" style="font-size: 16px; line-height: 1.8;">
+                        Halo, saya Hameed. Saya lulusan tahun 2026 SMK jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT). Sejak duduk di bangku SMP, saya bercita-cita menjadi pengusaha di bidang penyedia layanan internet dan terus mengembangkan pengetahuan serta keterampilan saya di bidang jaringan komputer dan telekomunikasi.
+                    </p>
+                    <p class="mb-4 text-muted" style="font-size: 16px; line-height: 1.8;">
+                        Saya adalah pribadi yang memiliki rasa ingin tahu tinggi, senang mempelajari hal-hal baru, dan tertarik pada perkembangan teknologi, khususnya di bidang jaringan komputer dan internet. Saya menikmati proses belajar, memecahkan masalah, serta terus berusaha meningkatkan kemampuan untuk menjadi pribadi yang lebih baik setiap harinya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+<!-- Service/Keahlian Start -->
+    <div id="keahlian" class="container-xxl py-5 bg-light mt-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold" style="letter-spacing: 2px;">keahlian Saya</h6>
+                <h1 class="mb-5 fw-bold">Pada Bidang</h1>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                
+                <!-- Skill 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-modern">
+                        <div class="service-icon">
+                            <i class="fa fa-network-wired"></i>
+                        </div>
+                        <h5 class="service-title">Network Configuration</h5>
+                        <p class="service-desc">Pemahaman kuat tentang fundamental TCP/IP. Andal dalam mengonfigurasi Router (MikroTik), Access Point, dan mengoptimalkan lalu lintas data jaringan.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-modern">
+                        <div class="service-icon">
+                            <i class="fa fa-tools"></i>
+                        </div>
+                        <h5 class="service-title">Field Infrastructure</h5>
+                        <p class="service-desc">Siap eksekusi langsung di lapangan. Terbiasa menangani instalasi jaringan fisik, mulai dari manajemen kabel LAN (UTP) hingga penarikan jalur Fiber Optik.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card-modern">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <h5 class="service-title">Web Development</h5>
+                        <p class="service-desc">Merancang website praktis dan fungsional. Mampu membuat landing page, sistem administrasi ringan, hingga website profil untuk kebutuhan toko dan usaha kecil.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+<!-- Pengalaman & Proyek Start -->
+    <div id="proyek" class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold" style="letter-spacing: 2px;">Portofolio</h6>
+                <h1 class="mb-5 fw-bold">Pengalaman & Proyek Saya</h1>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Proyek 1 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-3 h-100 overflow-hidden">
+                        <!-- Ganti src dengan link/path foto Anda -->
+                        <img src="img/foto-sarannet.jpeg" class="card-img-top" alt="Proyek SARAN.NET" style="object-fit: cover; height: 250px;">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold mb-2">2022 - Saat ini</h6>
+                            <h4 class="mb-3">Membangun Usaha Mikro Provider SARAN.NET</h4>
+                            <p class="text-muted mb-0">Sejak duduk di bangku SMP saya memiliki keinginan besar berwirausaha Mikro Provider atau sering disebut RT/RW Net. Sehingga saat ini saya memiliki pengetahuan yang cukup baik untuk dasar dasar networking seperti TCP/IP, mengelola traffic, dan memberikan pelayanan terbaik kepada calon ataupun pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-3 h-100 overflow-hidden">
+                        <!-- Ganti src dengan link/path foto Anda -->
+                        <img src="img/foto-magang.jpg" class="card-img-top" alt="Magang DISKOMINFO" style="object-fit: cover; height: 250px;">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold mb-2">Januari - Juni 2025</h6>
+                            <h4 class="mb-3">PKL di Diskominfo Kabupaten Magelang</h4>
+                            <p class="text-muted mb-0">Saya mendapatkan banyak ilmu dari Diskominfo Kabupaten Magelang untuk instalasi jaringan LAN menggunakan Akses Point dari Ruijie, MikroTik, Ubiquiti, dll. Saya juga mendapatkan pengalaman langsung dalam menelusuri permasalahan dalam jaringan LAN seperti Akses Poin tidak dapat meneruskan IP dari server. Selain itu saya juga mendapatkan pengalaman menerima tamu, mencatat tamu masuk, meneruskan pesan tamu dll dibagian resepsionis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-3 h-100 overflow-hidden">
+                        <!-- Ganti src dengan link/path foto Anda -->
+                        <img src="img/foto-fotografi.JPG" class="card-img-top" alt="Topologi VLAN" style="object-fit: cover; height: 250px;">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold mb-2">Hoby Menjadi Ilmu</h6>
+                            <h4 class="mb-3">Fotografi</h4>
+                            <p class="text-muted mb-0">Sejak duduk di bangku SMP saya sangat menyukai fotografi dan videografi. Mulai dari memotret hal random hingga mengabadikan momen yang tidak akan terulang dua kali. Selain memotret saya juga memiliki pemahaman untuk editing foto color grading.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 4 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-3 h-100 overflow-hidden">
+                        <!-- Ganti src dengan link/path foto Anda -->
+                        <img src="img/foro-genieacs.png" class="card-img-top" alt="Server TR-069" style="object-fit: cover; height: 250px;">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold mb-2">Proyek Server</h6>
+                            <h4 class="mb-3">Instalasi Server GenieACS</h4>
+                            <p class="text-muted mb-0">Walau saya masih belum mahir dibidang instalasi server, saya berhasil instal dan sudah aktif digunakan untuk Mikro Provider yang saya sedang jalani.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Pengalaman & Proyek End -->
+
+    <!-- Footer Start -->
+    <footer id="kontak" class="footer text-light mt-5" style="background: linear-gradient(135deg, #07122f 0%, #021033 50%, #00081f 100%);">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-between">
+                <!-- Kolom 1 -->
+                <div class="col-lg-5">
+                    <h2 class="text-white fw-bold mb-3">Janitra Hameed Al Khusen</h2>
+                    <p class="footer-desc mb-4" style="color: rgba(255,255,255,.8); line-height: 1.8;">
+                        Mari berkolaborasi untuk proyek infrastruktur jaringan tingkat lanjut, ekspansi ISP, atau pengembangan web portal perusahaan Anda selanjutnya.
+                    </p>
+                    <div class="social-group d-flex gap-2">
+                        <a class="btn-social rounded-circle border border-light d-flex align-items-center justify-content-center text-white text-decoration-none" style="width:42px; height:42px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn-social rounded-circle border border-light d-flex align-items-center justify-content-center text-white text-decoration-none" style="width:42px; height:42px;" href="#"><i class="fab fa-github"></i></a>
+                        <a class="btn-social rounded-circle border border-light d-flex align-items-center justify-content-center text-white text-decoration-none" style="width:42px; height:42px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2 -->
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">Hubungi Saya</h5>
+                    <div class="d-flex mb-3">
+                        <i class="fa fa-envelope text-warning me-3 mt-1"></i>
+                        <a href="mailto:emailanda@gmail.com" class="text-white text-decoration-none" style="opacity: 0.9;">janitrahameed@gmail.com</a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fab fa-whatsapp text-success me-3 mt-1"></i>
+                        <a href="#" class="text-white text-decoration-none" style="opacity: 0.9;">+62 851-7200-0051</a>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-map-marker-alt text-primary me-3 mt-1"></i>
+                        <span class="text-white" style="opacity: 0.9;">Kabupaten Magelang, Jawa Tengah, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top border-secondary py-4">
+            <div class="text-center text-md-start">
+                <small style="color: rgba(255,255,255,.7);">
+                    &copy; 2026 <strong>Sarana Nusantara Network</strong>. All Rights Reserved.
+                </small>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Logika Navbar ganti warna saat di-scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNav');
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.classList.remove('navbar-dark');
+                navbar.classList.add('navbar-light');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+                navbar.classList.remove('navbar-light');
+                navbar.classList.add('navbar-dark');
+            }
+        });
+
+        // Logika untuk Menu Full Screen dari Kanan
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const body = document.body;
+        const navbarCollapse = document.getElementById('navbarCollapse');
+
+        // Buka Menu
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); 
+            body.classList.add('menu-pushed');
+        });
+
+        // Tutup Menu
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', function() {
+                body.classList.remove('menu-pushed');
+            });
+        }
+
+        // Tutup menu otomatis jika user mengklik link menu
+        const navLinks = navbarCollapse.querySelectorAll('.nav-link, .btn-portal');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                body.classList.remove('menu-pushed');
+            });
+        });
+    </script>
+</body>
+</html>

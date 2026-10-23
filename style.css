@@ -1,0 +1,313 @@
+/********** Base & Variable CSS **********/
+:root {
+    --primary: #0D6EFD;
+    --light: #F0FBFC;
+    --dark: #181d38;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*** Button ***/
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #003a8c !important;
+    border-color: #003a8c !important;
+    color: #fff !important;
+}
+
+.btn-portal {
+    height: auto !important;
+    padding: 12px 30px !important;
+    margin-right: 20px !important;
+    align-self: center;
+}
+
+/*********************************
+ PENGATURAN NAVBAR
+*********************************/
+#mainNav {
+    height: 75px !important;
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease !important;
+    border: none !important;
+}
+
+nav#mainNav.navbar-dark {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+nav#mainNav.navbar-light {
+    background-color: #ffffff !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+#mainNav.navbar-dark .navbar-brand h2 {
+    color: #fff !important;
+}
+
+#mainNav.navbar-light .navbar-brand h2 {
+    color: #181d38 !important;
+}
+
+#mainNav .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .3s;
+}
+
+#mainNav.navbar-scrolled .nav-link {
+    color: #181d38 !important;
+}
+
+#mainNav.navbar-scrolled .nav-link:hover,
+#mainNav.navbar-scrolled .nav-link.active {
+    color: var(--primary) !important;
+}
+
+/*********************************
+ FULL SCREEN PUSH MENU (MOBILE)
+*********************************/
+@media (max-width: 991.98px) {
+    body.menu-pushed { overflow: hidden; }
+
+    #navbarCollapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        display: block !important;
+        padding-top: 80px;
+        overflow-y: auto;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1050;
+    }
+
+    body.menu-pushed #navbarCollapse { right: 0; }
+
+    .close-menu-btn {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 45px;
+        color: #181d38;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 1051;
+    }
+
+    .close-menu-btn:hover { color: var(--primary); }
+
+    #navbarCollapse .navbar-nav {
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    #navbarCollapse .nav-link {
+        color: #181d38 !important;
+        padding: 15px 0 !important;
+        border-bottom: 1px solid #f1f5f9;
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #navbarCollapse .nav-link:hover { color: var(--primary) !important; }
+
+    #navbarCollapse .btn-portal {
+        margin: 35px auto !important;
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .close-menu-btn { display: none !important; }
+    
+    #mainNav.navbar-dark .navbar-nav .nav-link { color: rgba(255, 255, 255, 0.9) !important; }
+    #mainNav.navbar-light .navbar-nav .nav-link { color: #181d38 !important; }
+    
+    #mainNav.navbar-dark .navbar-nav .nav-link:hover,
+    #mainNav.navbar-light .navbar-nav .nav-link:hover {
+        color: var(--primary) !important;
+    }
+}
+
+/*********************************
+ HERO SECTION
+*********************************/
+.static-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.static-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(24, 29, 56, .75), rgba(24, 29, 56, .75));
+    z-index: 1;
+    padding-top: 75px;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-desc {
+    color: rgba(255,255,255,.95);
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) { .hero-title { font-size: 3rem; } }
+@media (max-width: 768px) {
+    .static-hero { min-height: 500px; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-desc { font-size: 1rem; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-15px);}
+    60% {transform: translateY(-7px);}
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+.bounce:hover { color: var(--primary) !important; }
+
+/********************************=========
+   ANIMASI SERVICE CARD (Keahlian)
+=========================================*/
+.service-card-modern {
+    position: relative;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #f1f5f9;
+}
+
+.service-card-modern::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--primary);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 20px;
+}
+
+.service-card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.2);
+    border-color: transparent;
+}
+
+.service-card-modern:hover::before { height: 100%; }
+
+.service-card-modern .service-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(13, 110, 253, 0.1);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin: 0 auto 25px;
+    transition: all 0.5s ease;
+}
+
+.service-card-modern:hover .service-icon {
+    background: #fff;
+    color: var(--primary);
+    transform: rotateY(360deg) scale(1.1); 
+}
+
+.service-card-modern .service-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111827;
+    transition: all 0.5s ease;
+}
+
+.service-card-modern .service-desc {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.service-card-modern:hover .service-title,
+.service-card-modern:hover .service-desc {
+    color: #fff;
+}
+
+/*********************************
+ EFEK HOVER ICON FOOTER
+*********************************/
+.btn-social { transition: .3s; }
+.btn-social:hover {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff !important;
+}
